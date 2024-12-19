@@ -1,0 +1,80 @@
+/* Navbar2.css */
+
+/* Navbar styling */
+.navbar2 {
+  background-color: #ffffff; /* Solid color for the navbar */
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; /* Ensure navbar spans full width of the viewport */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: add subtle shadow for a modern look */
+}
+
+/* Container inside the navbar */
+.navbar2-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; /* Make sure the container spans the full width */
+}
+
+/* Brand container for logo */
+.navbar2-brand-container {
+  display: flex;
+  align-items: center;
+  margin-right: 20px; /* Space between the logo and heading */
+}
+
+.navbar2-brand {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.navbar2-brand i {
+  margin-right: 10px;
+  font-size: 30px;
+  color: #f473c4; /* Pink accent for the logo */
+}
+
+/* Heading styling */
+.navbar2-heading h1 {
+  font-size: 32px;
+  color: black; 
+  margin: 0;
+  text-align: center;
+  flex-grow: 1; /* Ensure it takes available space */
+}
+
+/* Logout button container */
+.logout-container {
+  display: flex;
+  align-items: center;
+}
+
+/* Logout button styling */
+.logout-button {
+  background-color: #e74c3c; /* Red background color */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px; /* Rounded corners for button */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect for logout button */
+.logout-button:hover {
+  background-color: #c0392b; /* Darker red on hover */
+  color: white;
+}
+
+/* Icon next to the logout button */
+.logout-button i {
+  margin-right: 8px;
+}

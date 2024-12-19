@@ -1,0 +1,90 @@
+/* Styling for Live Events */
+.live-events-section {
+  margin-bottom: 3rem;
+}
+
+.live-event-card {
+  background-color: #011126; /* Dark navy */
+  color: #f5fbf9; /* Light text for readability */
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.delete-live-button {
+  background-color: #ff4d4f; /* Red */
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.delete-live-button:hover {
+  background-color: #d9363e;
+}
+
+/* Interested People Section */
+.interested-people-section {
+  margin-top: 20px;
+}
+
+.interested-people-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-evenly;
+}
+
+.person-card {
+  background: #f0f0f0; /* Light gray */
+  color: #2d2d2d;
+  border-radius: 8px;
+  text-align: center;
+  padding: 15px;
+  width: 150px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.person-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.person-rating {
+  color: #ffc107; /* Gold */
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+/* Styling for Completed Events */
+.completed-event-card {
+  background-color: #f8f9fa; /* Light gray */
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.completed-event-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.delete-completed-button {
+  background-color: #ff4d4f; /* Red */
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.delete-completed-button:hover {
+  background-color: #d9363e;
+}

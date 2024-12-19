@@ -1,0 +1,146 @@
+.chatbox {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 350px;  /* Initial width */
+    height: 500px;  /* Increased height */
+    background-color: #f5fbfb;  /* Soft background color */
+    border: 1px solid #e0e0e0;  /* Light border for subtlety */
+    border-radius: 12px;  /* Rounded corners for a sleek look */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);  /* Slight shadow for depth */
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: width 0.3s, height 0.3s; /* Smooth transition for responsive changes */
+  }
+  
+  .chatbox-header {
+    background-color: #4f9fbf;  /* Soft blue */
+    padding: 12px;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  }
+  
+  .chatbox-header h4 {
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  .chatbox-header button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;  /* Icon size */
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+  }
+  
+  .chatbox-header button:hover {
+    background-color: rgba(255, 255, 255, 0.2);  /* Subtle hover effect */
+  }
+  
+  .chatbox-body {
+    flex-grow: 1;
+    padding: 12px;
+    overflow-y: auto;
+    background-color: #fff;  /* Clean white background for messages */
+  }
+  
+  .message {
+    margin-bottom: 12px;
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 80%;
+    font-size: 14px;
+  }
+  
+  .message.host {
+    background-color: #e0f7fa;  /* Light cyan for the host's messages */
+    align-self: flex-start;
+  }
+  
+  .message.provider {
+    background-color: #f1f1f1;  /* Light gray for provider's messages */
+    align-self: flex-end;
+  }
+  
+  .chatbox-footer {
+    padding: 12px;
+    border-top: 1px solid #e0e0e0;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .chatbox-footer input {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+  }
+  
+  .chatbox-footer input:focus {
+    border-color: #4f9fbf;  /* Focus color matching the header */
+  }
+  
+  .chatbox-footer button {
+    padding: 8px 16px;
+    background-color: #4f9fbf;  /* Matching button color with the header */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+  }
+  
+  .chatbox-footer button:hover {
+    background-color: #3a7f94;  /* Slightly darker blue for hover effect */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .chatbox {
+      width: 300px;  /* Adjust width for tablets and medium screens */
+      height: 450px;  /* Adjust height for tablets */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .chatbox {
+      width: 280px;  /* Adjust width for smaller screens */
+      height: 400px;  /* Adjust height for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .chatbox {
+      width: 250px;  /* Further decrease width on extra small screens */
+      height: 350px;  /* Further decrease height on extra small screens */
+    }
+  
+    .chatbox-header {
+      font-size: 14px;  /* Smaller font for header */
+    }
+  
+    .chatbox-footer input {
+      font-size: 12px;  /* Smaller font for input */
+    }
+  
+    .chatbox-footer button {
+      font-size: 12px;  /* Smaller font for button */
+    }
+  }
+  

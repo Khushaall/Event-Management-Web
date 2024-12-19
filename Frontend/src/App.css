@@ -1,0 +1,536 @@
+/* General Colors */
+:root {
+  --primary-color: #4caf50; /* Vibrant green */
+  --secondary-color: #f3f4f6; /* Light grey background */
+  --text-color: #333333; /* Dark text */
+  --btn-hover-color: #81c784; /* Soft green for hover effects */
+}
+
+/* Main Container */
+.intro-container {
+   flex-grow: 1; /*Fills the rest of the screen */
+  height: 85vh; 
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap; /* Allow wrapping of content */
+  align-items: center; /* Vertically center items */
+}
+
+/* Flexbox Alignment */
+.text-container {
+  flex: 1; /* Allows this section to take available space */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--text-color);
+  padding: 0 20px;
+}
+
+.right-section {
+  flex: 1; /* Allows right section to fill remaining space */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white; /* White background for better contrast */
+  border-bottom-left-radius: 75%; /* Only bottom-left corner is rounded */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  overflow: hidden; /* Ensures the image is clipped properly */
+  height: auto; /* Allows right section to adjust based on content */
+}
+
+/* Left Section Styling */
+.intro-heading {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.intro-text {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.intro-btn {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  /* transition: all 0.3s ease;
+  text-transform: uppercase; */
+  letter-spacing: 1px;
+}
+
+.intro-btn:hover {
+  background-color: var(--btn-hover-color);
+  color: black;
+  /* transform: scale(1.1); */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Styling */
+.intro-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .intro-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-container {
+    margin-bottom: 20px;
+  }
+
+  .right-section {
+    border-bottom-left-radius: 30px; /* Adjust radius for smaller screens */
+    width: 100%;
+    height: auto; /* Let it adjust based on image size */
+  }
+
+  .intro-heading {
+    font-size: 2.5rem;
+  }
+
+  .intro-text {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .intro-heading {
+    font-size: 2rem;
+  }
+
+  .intro-text {
+    font-size: 0.9rem;
+  }
+
+  .intro-btn {
+    padding: 7px 14px;
+    font-size: 0.9rem;
+  }
+}
+
+/* General Colors */
+/* General Colors */
+:root {
+  --primary-color: #ffffff; /* Vibrant green */
+  --secondary-color: #f8f9fa; /* Light grey */
+  --text-color: #000000; /* Black for list items */
+  --hover-color: #81c784; /* Soft green for hover */
+}
+
+/* Navbar Background Gradient */
+
+.bg-gradient {
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+  border-bottom: 2px solid var(--primary-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Navbar Brand */
+.navbar-brand {
+  color: var(--text-color) !important;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+/* Nav Links */
+.nav-link {
+  color: var(--text-color) !important;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.hover-effect:hover {
+  color: var(--hover-color) !important;
+  text-decoration: underline;
+}
+
+/* Login Button */
+.custom-btn {
+  background-color: black !important;
+  color: white !important;
+  font-weight: bold;
+  border: 2px solid white;
+  border-radius: 30px;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.custom-btn:hover {
+  background-color: var(--hover-color) !important;
+  color: black !important;
+  transform: scale(1.1);
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.5);
+}
+
+/* Symmetry and Spacing */
+.navbar-nav {
+  gap: 10px; /* Space between links */
+}
+
+.nav-item {
+  margin: 0 5px;
+}
+.navbar{
+  height: 15vh !important;
+}
+.navbar-brand,
+.navbar-nav .nav-item {
+  text-align: center;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .navbar-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    padding-top: 10px;
+  }
+
+  .custom-btn {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+}
+
+/* footer */
+.color{
+  background-color: #000000;
+}
+
+/* General Styles */
+.app {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  position: relative;
+}
+
+/* Content (Main Page) */
+.content {
+  padding: 20px;
+}
+
+
+/* Header and Main Content */
+header {
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+
+/* Modal Backdrop */
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for backdrop */
+  z-index: 1000; /* Layer above main content but below modal */
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center modal in the viewport */
+}
+
+/* Login Modal */
+.login-modal {
+  position: relative;
+  background-color: white; /* White background for contrast */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+  width: 350px;
+  max-width: 90%; /* Ensure modal is responsive */
+  z-index: 1010; /* Layer above backdrop */
+  text-align: center; /* Center-align content */
+}
+
+/* Modal Header */
+.login-modal h5 {
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333; /* Dark text color */
+}
+
+/* Form Labels */
+.login-modal .form-label {
+  font-weight: bold;
+  color: #5c4033; /* Match the custom button color for theme consistency */
+}
+
+/* Form Controls */
+.login-modal .form-control {
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+/* Buttons */
+.btnlog {
+  background-color: #5c4033; /* Custom brown color */
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btnlog:hover {
+  background-color: #432d22; /* Darker brown for hover effect */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow on hover */
+}
+
+.btn-secondary {
+  background-color: #6c757d; /* Bootstrap secondary color */
+  border: none;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268; /* Darker shade of secondary color */
+}
+
+/* Blurred Background for Main Content */
+.blurred-content {
+  filter: blur(5px); /* Apply blur effect */
+  pointer-events: none; /* Disable interactions */
+  user-select: none; /* Prevent text selection */
+}
+
+/* Modal Backdrop */
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for backdrop */
+  z-index: 1000; /* Layer above blurred content */
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center modal */
+}
+
+/* Modal Styles */
+.login-modal,
+.signup-modal {
+  position: relative;
+  background-color: white; /* White background */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+  width: 350px;
+  z-index: 1010; /* Layer above backdrop */
+  text-align: center;
+}
+
+.btnfrm:hover{
+background-color: #33333386;
+border: 2px solid #eee;
+}
+.btnfrm:focus{
+background-color: #33333386;
+
+}
+
+/*Event List*/
+
+.event-form-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.event-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.event-form .form-group {
+  margin-bottom: 20px;
+}
+
+.event-form .form-label {
+  font-size: 1.1rem;
+  color: #5c4033;
+}
+
+.event-form .form-control {
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.event-form .form-control:focus {
+  border-color: #5c4033;
+  box-shadow: 0 0 5px rgba(92, 64, 51, 0.5);
+}
+
+.event-form .input-group-text {
+  background: #5c4033;
+  color: white;
+}
+
+.event-form .btn-primary {
+  background-color: #5c4033;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.event-form .btn-primary:hover {
+  background-color: #432d22;
+}
+
+.event-form .text-center {
+  margin-top: 20px;
+}
+
+.event-form .form-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.event-form .form-row .col {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.event-form .form-row .col:last-child {
+  margin-right: 0;
+}
+
+
+/*login*/
+.modal-backdrop {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent dark background */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1050;
+}
+#about{
+  padding-top: 50px ;
+}
+.login-modal {
+  background-color: #fff; /* White background */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 90%;
+}
+
+.toggle-buttons {
+  margin-bottom: 16px;
+}
+
+.toggle-btn {
+  background: none;
+  border: none;
+  padding: 8px 16px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #6c757d;
+  border-bottom: 2px solid transparent;
+  transition: color 0.3s, border-color 0.3s;
+}
+
+.toggle-btn.active {
+  color: #5c4033; /* Highlighted color for the active button */
+  border-bottom: 2px solid #5c4033;
+}
+
+.btnlog {
+  width: 100px;
+  border: none;
+  border-radius: 4px;
+}
+
+form {
+  margin-top: 16px;
+}
+
+.btn-secondary {
+  border-radius: 4px;
+}
+
+/* feature */
+
+/* footer */
+
+.invisible {
+  opacity: 0;
+  transform: translateY(70px);
+}
+
+.footer-heading, .footer-description, .footer-icons {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.5s ease-out; /* Slow down entrance */
+}
+
+.footer-heading {
+  transition: all 0.5s ease-out;
+}
+
+.footer-icons {
+  transition: all 0.5s ease-out 0.5s; /* Social icons will appear after the text */
+}
+
+.animate-footer-heading {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.animate-footer-description {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.animate-footer-icons {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes fade-in {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+

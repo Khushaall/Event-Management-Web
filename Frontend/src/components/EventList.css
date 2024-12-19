@@ -1,0 +1,113 @@
+.main-page-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f5fbf9;
+}
+
+/* Sidebar Buttons */
+.side-buttons {
+  width: 20%;
+  background-color: #f5fbf9;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  height: 100vh;
+  gap: 15px;
+  position: fixed;
+}
+
+.main-button {
+  width: 100%;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: black;
+  color: white;
+  text-align: left;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.main-button:hover {
+  background-color: #ed5b91;
+}
+
+.main-button.active {
+  background-color: #ed5b91;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  margin-left: 25%; /* Account for sidebar width */
+  padding: 40px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Styling */
+.event-form-section h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.event-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+}
+
+.form-group label {
+  position: absolute;
+  top: 12px;
+  left: 15px;
+  font-size: 16px;
+  color: #999;
+  pointer-events: none;
+  transition: 0.2s;
+}
+
+.form-group input:focus ~ label,
+.form-group select:focus ~ label,
+.form-group textarea:focus ~ label,
+.form-group input:not(:placeholder-shown) ~ label,
+.form-group textarea:not(:placeholder-shown) ~ label {
+  top: -12px;
+  left: 15px;
+  font-size: 12px;
+  color: #ed5b91;
+}
+
+button {
+  background-color: black;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ed5b91;
+}
